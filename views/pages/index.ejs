@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <% include ../partials/header.ejs %>
+  <title>Partie Among Us !! </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/stylesheets/main.css" />
+  <link rel="icon" type="image/png" href="/images/IconeWeb.PNG" />
+  <!--<%- include ../partials/header.ejs %> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
+
 <body>
   <h1> Nouveau Site </h1>
+
+   
+  <img src="https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/231/among-us-player-red-512.png" id="character1" onclick=clickHandler()/>
+
+  <script>
+    function clickHandler() {
+       alert("INNOCENT !");
+       changeImageDead();
+    }
+    
+
+    function changeImageDead() {
+
+      if (document.getElementById("character1").src == "https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/231/among-us-player-red-512.png") 
+      {
+          document.getElementById("character1").src = "https://preview.redd.it/zl6fwi9lwbo51.png?width=440&format=png&auto=webp&s=72ea75882ba91f9981e40434dc1481600bc80c41";
+      }
+      else 
+      {
+          document.getElementById("character1").src = "https://preview.redd.it/zl6fwi9lwbo51.png?width=440&format=png&auto=webp&s=72ea75882ba91f9981e40434dc1481600bc80c41";
+      }
+    }
+
+    
+  </script>
+  
 </body>
+
 </html>

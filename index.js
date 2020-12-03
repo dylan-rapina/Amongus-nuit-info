@@ -8,3 +8,4 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+  //.use(favicon(path.join(__dirname,'public','images','IconeWeb.PNG')));

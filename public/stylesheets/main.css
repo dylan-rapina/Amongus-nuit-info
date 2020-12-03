@@ -1,19 +1,52 @@
 body {
-    background-image: url('../images/amongus_map.jpg');
+    background-image: url('../images/Skeld.png');
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size: fixed;
+    background-color: black;
+    height: 100%;
+    
 }
+
+
+
+.test
+{
+    position: fixed;
+    top: 170px;
+    left: 750px;
+    width : 30px;
+    height: 30px;  
+}
+
+.test1
+{
+    position: fixed;
+    top: 185px;
+    left: 480px;
+    width : 30px;
+    height: 30px;  
+}
+
 
 h1{
     color: blue;
 }
 
+
+.footer {
+    position: fixed;
+    top: 1px;
+    left: 50px;
+    text-align: center;
+}
+
 .slay-text {
+  position: static;
+  height: 50px;
   color: white;
   background-color: black;
   opacity: 80%;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
-  font-size: 5em;
+  font-size: 3em;
 }

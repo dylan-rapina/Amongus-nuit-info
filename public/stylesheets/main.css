@@ -1,7 +1,19 @@
 body {
     background-image: url('../images/amongus_map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 h1{
     color: blue;
+}
+
+.slay-text {
+  color: white;
+  background-color: black;
+  opacity: 80%;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 5em;
 }

@@ -9,22 +9,75 @@ body {
 
 
 
-.test
-{
+.character {
     position: fixed;
-    top: 170px;
-    left: 750px;
     width : 30px;
-    height: 30px;  
+    height: 30px;
 }
 
-.test1
+#character1
 {
-    position: fixed;
+    top: 35px;
+    left: 900px;
+}
+
+#character1.image:hover 
+{
+    background: none;
+}
+
+#character2
+{
     top: 185px;
     left: 480px;
-    width : 30px;
-    height: 30px;  
+}
+
+#character3
+{
+    top: 500px;
+    left: 1050px;
+}
+
+#character4
+{
+    top: 360px;
+    left: 1200px;
+}
+
+#character5
+{
+    top: 126px;
+    left: 1260px;
+}
+
+#character6
+{
+    top: 440px;
+    left: 1612px;
+}
+
+#character7
+{
+    top: 780px;
+    left: 1000px;
+}
+
+#character8
+{
+    top: 300px;
+    left: 120px;
+}
+
+#character9
+{
+    top: 530px;
+    left: 650px;
+}
+
+#character10
+{
+    top: 700px;
+    left: 340px;
 }
 
 

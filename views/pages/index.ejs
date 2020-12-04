@@ -10,32 +10,36 @@
   <!--<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
 
   <script>
-    function clickHandlerImpostor(id) {
+    function clickHandlerImpostor(id, color) {
       var mySound;
       mySound = new sound("/images/kill.mp3");
       mySound.play();
-       changeImageDead(id);
+       changeImageDead(id, color);
        document.getElementById("slay-text").innerHTML = "It was The Impostor !";
+      document.location.href="http://localhost:5000/youwon";
     }
 
-    function clickHandlerCrewMate(id) {
+    function clickHandlerCrewMate(id, color) {
       var mySound;
       mySound = new sound("/images/kill.mp3");
       mySound.play();
-       changeImageDead(id);
+       changeImageDead(id, color);
        document.getElementById("slay-text").innerHTML = "It was a CrewMate !";
+       setTimeout(function(){
+        document.getElementById("slay-text").innerHTML = "";
+       },2000)
     }
     
 
-    function changeImageDead(id) {
+    function changeImageDead(id, color) {
 
-      if (document.getElementById(id).src == "/images/player-red.png")
+      if (document.getElementById(id).src == "/images/player-"+color+".png")
       {
-          document.getElementById(id).src = "/images/player-red-dead.png";
+        document.getElementById(id).src = "/images/player-"+color+"-dead.png";
       }
       else 
       {
-          document.getElementById(id).src = "/images/player-red-dead.png";
+          document.getElementById(id).src = "/images/player-"+color+"-dead.png";
       }
     }
 
@@ -62,8 +66,16 @@
 
 <body>  
   <div>
-    <img src="/images/player-red.png" class="test" id="character1" onclick="clickHandlerImpostor(id)"/>
-    <img src="/images/player-red.png" class="test1" id="character2" onclick="clickHandlerCrewMate(id)"/>
+    <img src="/images/player-red.png" class="character" id="character1" onclick="clickHandlerImpostor(id,'red')"/>
+    <img src="/images/player-green.png" class="character" id="character2" onclick="clickHandlerCrewMate(id,'green')"/>
+    <img src="/images/player-blue.png" class="character" id="character3" onclick="clickHandlerCrewMate(id,'blue')"/>
+    <img src="/images/player-green.png" class="character" id="character4" onclick="clickHandlerCrewMate(id,'green')"/>
+    <img src="/images/player-red.png" class="character" id="character5" onclick="clickHandlerCrewMate(id,'red')"/>
+    <img src="/images/player-blue.png" class="character" id="character6" onclick="clickHandlerCrewMate(id,'blue')"/>
+    <img src="/images/player-green.png" class="character" id="character7" onclick="clickHandlerCrewMate(id,'green')"/>
+    <img src="/images/player-red.png" class="character" id="character8" onclick="clickHandlerCrewMate(id,'red')"/>
+    <img src="/images/player-blue.png" class="character" id="character9" onclick="clickHandlerCrewMate(id,'blue')"/>
+    <img src="/images/player-blue.png" class="character" id="character10" onclick="clickHandlerCrewMate(id,'blue')"/>
   </div>
 
   <div class="footer">

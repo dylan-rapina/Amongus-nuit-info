@@ -10,13 +10,31 @@
   <!--<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
 
   <script>
+
     function clickHandlerImpostor(id, color) {
       var mySound;
       mySound = new sound("/images/kill.mp3");
       mySound.play();
        changeImageDead(id, color);
        document.getElementById("slay-text").innerHTML = "It was The Impostor !";
-      document.location.href="http://localhost:5000/youwon";
+       setTimeout(function(){
+        document.getElementById("slay-text").innerHTML = "";
+       },3000)
+       
+       //document.location.href="/win"
+       document.getElementById("character1").className = "teste";
+       document.getElementById("character2").className = "teste";
+       document.getElementById("character3").className = "teste";
+       document.getElementById("character4").className = "teste";
+       document.getElementById("character5").className = "teste";
+       document.getElementById("character6").className = "teste";
+       document.getElementById("character7").className = "teste";
+       document.getElementById("character8").className = "teste";
+       document.getElementById("character9").className = "teste";
+       document.getElementById("character10").className = "teste";
+
+       document.body.style.background = "#f3f3f3 url('/images/yoo.jpg') no-repeat";
+
     }
 
     function clickHandlerCrewMate(id, color) {
